@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Perfectly Portioned Fitness</h1>
+        <p>Build Your Meal Plan</p>
+    </header>
+
+    <form id="mealPlanForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="goal">Goal for the Week:</label>
+        <textarea id="goal" name="goal" rows="4" required></textarea>
+
+        <h2>Weekly Meal Plan</h2>
+        <!-- Meal plan input fields for each day of the week -->
+        <div class="meal-plan">
+            <label for="monday">Monday:</label>
+            <input type="text" id="monday-breakfast" name="monday-breakfast" placeholder="Breakfast">
+            <input type="text" id="monday-snack" name="monday-snack" placeholder="Snack">
+            <input type="text" id="monday-lunch" name="monday-lunch" placeholder="Lunch">
+            <input type="text" id="monday-afternoon-snack" name="monday-afternoon-snack" placeholder="Afternoon Snack">
+            <input type="text" id="monday-dinner" name="monday-dinner" placeholder="Dinner">
+            
+            <label for="tuesday">Tuesday:</label>
+            <input type="text" id="tuesday-breakfast" name="tuesday-breakfast" placeholder="Breakfast">
+            <input type="text" id="tuesday-snack" name="tuesday-snack" placeholder="Snack">
+            <input type="text" id="tuesday-lunch" name="tuesday-lunch" placeholder="Lunch">
+            <input type="text" id="tuesday-afternoon-snack" name="tuesday-afternoon-snack" placeholder="Afternoon Snack">
+            <input type="text" id="tuesday-dinner" name="tuesday-dinner" placeholder="Dinner">
+
+            <label for="wednesday">Wednesday:</label>
+            <input type="text" id="wednesday-breakfast" name="wednesday-breakfast" placeholder="Breakfast">
+            <input type="text" id="wednesday-snack" name="wednesday-snack" placeholder="Snack">
+            <input type="text" id="wednesday-lunch" name="wednesday-lunch" placeholder="Lunch">
+            <input type="text" id="wednesday-afternoon-snack" name="wednesday-afternoon-snack" placeholder="Afternoon Snack">
+            <input type="text" id="wednesday-dinner" name="wednesday-dinner" placeholder="Dinner">
+
+            <label for="thursday">Thursday:</label>
+            <input type="text" id="thursday-breakfast" name="thursday-breakfast" placeholder="Breakfast">
+            <input type="text" id="thursday-snack" name="thursday-snack" placeholder="Snack">
+            <input type="text" id="thursday-lunch" name="thursday-lunch" placeholder="Lunch">
+            <input type="text" id="thursday-afternoon-snack" name="thursday-afternoon-snack" placeholder="Afternoon Snack">
+            <input type="text" id="thursday-dinner" name="thursday-dinner" placeholder="Dinner">
+
+            <label for="friday">Friday:</label>
+            <input type="text" id="friday-breakfast" name="friday-breakfast" placeholder="Breakfast">
+            <input type="text" id="friday-snack" name="friday-snack" placeholder="Snack">
+            <input type="text" id="friday-lunch" name="friday-lunch" placeholder="Lunch">
+            <input type="text" id="friday-afternoon-snack" name="friday-afternoon-snack" placeholder="Afternoon Snack">
+            <input type="text" id="friday-dinner" name="friday-dinner" placeholder="Dinner">
+
+            <label for="saturday">Saturday:</label>
+            <input type="text" id="saturday-breakfast" name="saturday-breakfast" placeholder="Breakfast">
+            <input type="text" id="saturday-snack" name="saturday-snack" placeholder="Snack">
+            <input type="text" id="saturday-lunch" name="saturday-lunch" placeholder="Lunch">
+            <input type="text" id="saturday-afternoon-snack" name="saturday-afternoon-snack" placeholder="Afternoon Snack">
+            <input type="text" id="saturday-dinner" name="saturday-dinner" placeholder="Dinner">
+
+            <label for="sunday">Sunday:</label>
+            <input type="text" id="sunday-breakfast" name="sunday-breakfast" placeholder="Breakfast">
+            <input type="text" id="sunday-snack" name="sunday-snack" placeholder="Snack">
+            <input type="text" id="sunday-lunch" name="sunday-lunch" placeholder="Lunch">
+            <input type="text" id="sunday-afternoon-snack" name="sunday-afternoon-snack" placeholder="Afternoon Snack">
+            <input type="text" id="sunday-dinner" name="sunday-dinner" placeholder="Dinner">
+        </div>
+
+        <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        <button type="button" onclick="clearMealPlan()">Clear Meal Plan</button>
+        <button type="button" onclick="printMealPlan()">Print/Download Meal Plan</button>
+    </form>
+
+    <script src="projectJS.js"></script>
+</body>
+</html>
